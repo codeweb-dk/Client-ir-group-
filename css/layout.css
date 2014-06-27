@@ -1,0 +1,338 @@
+/* 
+Document   : Main Layout
+Author     : IR Group
+Description: layout styles
+
+*/
+
+/* Table of Content
+==================================================
+#GENERAL
+#TOP HEADER
+#BOOSTRAP NAVIGATION CUSTOMIZATION
+#HOMECONTENT
+#FOOTER
+#GENERAL
+#PARALLAX STUFF
+#HEADER
+#MAIN MENU 
+#FOOTER 
+#SLIDERS
+#BLOG
+#NEWS
+#PAGES
+#PORTFOLIO
+#FORMS
+#MISCELANIOUS
+
+*/
+
+/*
+=========== GENERAL ====================
+*/
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+  font-family: Verdana, "Open Sans","Helvetica Neue", Helvetica, Arial,sans-serif !important;
+  font-size: 11px;
+  
+}
+
+a{
+	color:#6abab8;
+}
+
+
+/*
+=========== TOP HEADER  ================
+*/
+
+#header-top{
+	width:100%;
+	height:8px;
+	background: #6abab8;
+}
+
+/*
+========== BOOTSTRAP NAVIGATION CUSTOMIZATION ============
+*/
+
+.irNavigation{
+	background: none!important;
+	height:80px!important;
+	border:none;
+
+	
+
+	
+		
+}
+
+.irNav{
+	height:50px!important;
+	margin-top:30px!important;
+	
+	
+
+}
+
+.irNav > li > a{
+	padding:1px 8px!important;
+	border-right: 1px solid #6abab8;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.irNav > .active > a, .irNav > .active > a:focus {
+	background: none!important;
+	color:#6abab8!important;
+}
+
+.irNav > li > a:hover{
+	color:#6abab8!important;
+}
+
+.navbar-logo{
+	padding: 0!important;
+	line-height: 0!important;
+	height:100px!important;
+}
+
+.drop-style > li > a:hover{
+	color:#6abab8!important;
+	
+}
+
+.drop-style > li > a{
+	font-weight: bold;
+	font-size: 12px !important;
+}
+
+   
+
+/*
+===============HOMECONTENT =================
+*/
+
+.homeContent{
+	
+}
+
+#camera_wrap_1{
+	margin-bottom: 10px;
+}
+.homeContent img{
+	padding:2px;
+	border:1px solid #efefef;
+}
+.serviceList{
+	background: #6abab8;
+	
+	
+}
+
+.serviceList > li{
+	
+	height:50px;
+	line-height: 50px;
+	border-bottom: 1px solid #FFF;
+}
+
+.serviceList >li > a{
+	color:#FFF;
+	padding-left: 10px;
+	font-size: 11px;
+	font-weight: bold;
+}
+.quicklinks{
+	
+	
+	background: #e5f3f6;
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+	
+}
+.quicklinks h5{
+	padding:10px;
+	background: #d1edf1;
+	text-align: center;
+}
+.scblock, .frblock, .thblock {
+	
+	padding-left: 8px;
+}
+.quicklinks a{
+	color:
+}
+.list1{
+		border-left:5px solid #176e6c;
+
+}
+.list2{
+		border-left:5px solid #83063b;
+
+}
+.list3{
+		border-left:5px solid #dfe0e0;
+
+}
+.list4{
+		border-left:5px solid #049d6c;
+
+}
+.list5{
+		border-left:5px solid #118096;
+
+}
+.list6{
+		border-left:5px solid #09404b;
+
+}
+.list7{
+		border-left:5px solid #57176e;
+
+}
+.listTitle{
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	color:#284391!important;
+}
+
+.serviceButton{
+	height:90px!important;
+	line-height: 90px!important;
+	text-align: center;
+}
+.serviceButton > a{
+	padding: 15px ;
+	text-align: center!important;
+	font-size: 12px!important;
+	font-weight: bold!important;
+	
+}
+.btn-primary{
+	background: #284391 !important;
+}
+h6, h5{
+	color:#294391;
+	font-weight: bold;
+}
+.part1, .part2, .part3{
+	min-height:180px;
+	text-align: center;
+}
+
+.homeContentMiddle img{
+	
+	
+	position:relative;       
+    -webkit-box-shadow:0 4px 4px #efefef;
+       -moz-box-shadow:0 4px 4px #efefef;
+            box-shadow:0 4px 4px #efefef;
+ 
+}
+.serviceArea img{
+	border:1px solid #f0f0f0;
+	-webkit-box-shadow:0 2px 2px #efefef;
+       -moz-box-shadow:0 2px 2px #efefef;
+            box-shadow:0 2px 2px #efefef;
+            width: 300px;
+            margin-bottom: 10px;
+	
+}
+
+/*
+=============== FOOTER =================
+*/
+#homeFooter{
+width:100%;
+background: #6abab8;
+height:130px;
+color:#FFF !important;
+
+}
+.footerContent a{
+	color:#FFF;
+	text-align: left;
+}
+
+.footerContent{
+	color:#FFF !important;
+}
+
+.socialMedia a{
+	display: block;
+	padding: 0 !important;
+	text-indent: -9000px;
+	text-transform: capitalize;
+	background: url('../images/media-icons.png') no-repeat scroll 0px 0px transparent;
+	height:24px;
+	width:24px;
+}
+
+.socialMedia a.facebook{
+	background-position: 0px -25px;
+}
+.socialMedia a.twitter{
+	background-position: -70px -25px;
+}
+.socialMedia a.linkedin{
+	background-position: -105px -25px;
+}
+
+#footerBottom{
+	width:100%;
+	height:30px;
+	
+	background: #4b9694;
+	
+}
+#footerBottom p{
+	color: #FFF;
+	text-align: center;
+	padding-top: 5px;
+
+}
+
+/*
+=======================KONTAKT================
+*/
+
+#map-canvas {
+        width: 850px;
+        height: 280px;
+      }
+      
+.kontaktinfo{
+
+margin-bottom: 15px;
+	
+}
+#InputName_validate, #InputEmail_validate, #InputAdress_validate, #InputPostNr_validate, 
+#InputMessage_validate, #InputReal_validate, #InputFornavn_validate, #InputEfternavn_validate, #InputTelefon_validate, #InputAdresse_validate, #InputPostnr_validate, #InputEmail_validate  {
+	color:red;
+	font-size: 10px;
+}
+
+.checkbox span{
+	font-size: 11px;
+	
+	line-height:20px;
+}
+
+#red{
+	color:red;
+	font-size: 10px;
+
+}

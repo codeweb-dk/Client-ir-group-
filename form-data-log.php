@@ -1,0 +1,11 @@
+<?php exit(); /* For security reason. To avoid public user downloading below data! */?>
+"RecordID"	"Date"	"IP"	"Fornavn"	"efternavn"	"Adress"	"Post nr. og by"	"Telefon"	"Email"	"Jeg er ledig nu"	"Jeg er ledig pr. den"	"Jeg er udelukkende interesseret i fast job indenfor"	"Andet"	"Jeg har erfaring med (sæt gerne flere krydser) Kantine"	"kontor"	"Andet"	"Vedhæft CV"	"Vedhæft evt. billede"
+"20140506-3b3a"	"2014-05-06 02:41:02"	"2.107.12.5"	"test"	"test"	"test"	"test"	"test"	"himelhunny@yahoo.com"	""	"30-05-12"	"Andet"	"this is other message"	"Opvask\nSalatbar\nRengøring"	"Reception\nKundeservice\nPiccoline"	"Hjemmepleje\nLager\nLager/truck"	"Aminul-cv-1.pdf"	"p11.png"
+"20140506-06d7"	"2014-05-06 02:57:40"	"2.107.12.5"	"test"	"test"	"test"	"test"	"test"	"himelhunny@yahoo.com"	""	"30"	"Kontor"	"this is other test"	"Opvask\nServering"	"Sekretær\nKorrespondet"	"Rengøring\nHjemmepleje"	"Aminul-cv-1.pdf"	"p10.png"
+"20140506-0df9"	"2014-05-06 03:02:11"	"2.107.12.5"	"test"	"test"	"test"	"test"	"302686"	"himelhunny@yahoo.com"	""	"30"	"Kontor"	"this is test"	"Rengøring\nKokke opgaver"	"Sekretær\nBogholderi"	"Rengøring"	""	""
+"20140506-80e7"	"2014-05-06 03:05:58"	"2.107.12.5"	"test"	"test"	"test"	"test"	"test"	"me@aminiis.dk"	""	"30"	"Kontor"	"this is test"	"Salatbar\nRengøring\nServering"	"Reception\nSekretær"	"Hjemmepleje\nLager\nLager/truck"	""	""
+"20140506-9d12"	"2014-05-06 03:19:47"	"2.107.12.5"	"test"	"test"	"test"	"test"	"test"	"himelhunny@yahoo.com"	""	"30-05-12"	"Kontor"	""	"Opvask"	"Sekretær"	"Lager/truck"	""	""
+"20140506-eeb4"	"2014-05-06 03:34:32"	"2.107.12.5"	"test"	"test"	"test"	"test"	"test"	"himelhunny@yahoo.com"	""	""	""	""	""	""	""	""	""
+"20140506-305c"	"2014-05-06 04:27:13"	"2.107.12.5"	"test"	"test"	"test"	"test"	"302686"	"himelhunny@yahoo.com"	""	"30-05-12"	"Kontor"	""	""	"Piccoline\nSekretær"	"Lager\nLager/truck"	"Aminul-cv-1.pdf"	"p10.png"
+"20140506-1e06"	"2014-05-06 04:35:15"	"2.107.12.5"	"test"	"test"	"test"	"test"	"302686"	"me@aminiis.dk"	""	"30-05-12"	"Kontor"	""	"Lederjob"	"Piccoline\nSekretær\nKorrespondet"	"Hjemmepleje\nLager"	"Aminul-cv-1.pdf"	"BgfmdoOCQAES84p.png"
+"20140506-83da"	"2014-05-06 04:39:49"	"2.107.12.5"	"test"	"test"	"test"	"test"	"302686"	"me@aminiis.dk"	""	""	"Kontor"	""	"Rengøring\nServering"	"Reception\nPiccoline\nSekretær"	"Rengøring\nLager"	"Aminul-cv-1.pdf"	"p7.png"

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -9,7 +10,7 @@
     <head>
         <title>IR Group - vikarbureau</title>
         
-        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	    <meta name="Author" content="IRGROUP" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    
@@ -69,20 +70,20 @@
 							<nav class="navbar navbar-default scrollMenu irNavigation" role="navigation">
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-									<a class="navbar-brand navbar-logo" href="index.html"><img src="images/irlogo.png" height="75px" width="90px" alt="IR Group"/></a> 
+									<a class="navbar-brand navbar-logo" href="index.php"><img src="images/irlogo.png" height="75px" width="90px" alt="IR Group"/></a> 
 								</div>
 									<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
 										<ul class="nav navbar-nav pull-right irNav">
-											<li class="active"><a href="index.html"><i class="icon-home-outline"></i>Home</a> </li>
-											<li><a href="about-ir.html"><i class="icon-comment"></i>Om IR Group</a> </li>
-											<li><a href="services.html"><i class="icon-thumbs-up"></i>Services</a> </li>
+											<li class="active"><a href="index.php"><i class="icon-home-outline"></i>Home</a> </li>
+											<li><a href="about-ir.php"><i class="icon-comment"></i>Om IR Group</a> </li>
+											<li><a href="services.php"><i class="icon-thumbs-up"></i>Services</a> </li>
 											<li class="dropdown"><a href="/" data-toggle="dropdown" class="dropdown-toggle">Jobsøgere<b class="caret"></b></a> 
 											<ul class="list-unstyled dropdown-menu drop-style">
-												<li><a href="ledige-vikariater.html">Ledige vikariater</a></li>
+												<li><a href="ledige-vikariater.php">Ledige vikariater</a></li>
 												<li><a href="cvsend.php">Send dit CV</a></li>
 											</ul></li>
-											<li><a href="for-virksomheder.html"><i class="icon-popup-1"></i>For virksomheder</a> </li>	
-											<li><a href="kontakt.html"><i class="icon-mail"></i>Kontakt</a> </li>
+											<li><a href="for-virksomheder.php"><i class="icon-popup-1"></i>For virksomheder</a> </li>	
+											<li><a href="kontakt.php"><i class="icon-mail"></i>Kontakt</a> </li>
 										</ul>
 									</div>
 		
@@ -130,28 +131,23 @@
         </div>
         		
 
-        			              <h5>Velkommen til IR Group</h5>
-			                     <p>IR Group er et dansk vikar- og rengøringsbureau, der stræber efter at tilbyde erhvervslivet professionel, lynhurtig og effektiv assistance indenfor rengøring, personaleudvælgelse og vikarløsninger.</p>
-			                     <h6>Det rigtige match</h6>
-			                     <p>En af vores vigtigste ressourcer er selvfølgelig vores mange dedikerede vikarer og medarbejdere, der hver dag sætter en ære i at udføre et godt stykke arbejde. Vi clearer alle medarbejdere, og du kan altid regne med, at vi sender dig motiverede og dygtige vikarer/medarbejdere med mange års erfaring.</p>
-			                     <div class="row clearfix homeContentMiddle">
-				                     <div class="col-md-4 col-sm-4 col-xs-12 part1">
-				                     <img class="img" src="images/p1.png" alt="" />
-					                 <h6>Søger du job?</h6>
-					                 <a href="cvsend.php"> >> Lav dit CV online her</a>
-				                     </div>
-				                     <div class="col-md-4 col-sm-4 col-xs-12 .col-md-offset-3 part2 ">
-					                 <img class="img" src="images/p3.png" alt="" />
-					                 <h6>Find ny medarbejder</h6>
-					                 <a href="kontakt.html"> >> Kontakt rekrutteringskonsulenter</a>
-				                     </div>
-				                     <div class="col-md-4 col-sm-4 col-xs-12 part3">
-					                 <img class="img" src="images/p4.png" alt="" />
-					                 <h6>For medarbejder</h6>
-					                 <a href="timeseddel .pdf"> >> udfylde din timeseddel</a>
-				                     </div>
-			                     </div>
-			                 </div>
+		<?php
+		
+		     require("sources/connection.php");
+			// Load in the content of the current viewing page from the MySQL database
+			//$page = (isset($_GET['page'])) ? $_GET['page'] : "1";    
+            mysqli_set_charset($conn, "utf8");
+			$sql = "SELECT * FROM pages WHERE name='Home'";
+			
+			$result = $conn->query($sql) or die(mysqli_error());
+			if($result){
+				$row = $result->fetch_object();
+				echo $row->content;
+			}
+	
+		?>
+		</div>	
+		
 			                 <div class="col-md-3 col-sm-3 col-xs-12 serviceArea">
 			                  <a href="#"><img src="images/p2.png" class="img-responsive" alt="" /></a>
 			                          <ul class="serviceList list-unstyled">
@@ -172,69 +168,23 @@
 			            </div>
 			       </div>
 			   </section> 
-			   <div id="homeFooter">
-			     <div class="container clearfix">
-				     <div class="row">
-					     <div class="col-md-3 footerContent">
-
-					     <h6>Praktiske links</h6>
-					     <ul class="list-unstyled">
-						     <li><a href="www.rejseplanen.dk"> www.rejseplanen.dk</a></li>
-						     <li><a href="www.krak.dk"> www.krak.dk</a></li>
-						     <li><a href="www.dsb.dk"> www.dsb.dk</a></li>
-					     </ul>
-						     
-					     </div>
-					     <div class="col-md-3 footerContent">
-					     <h6>For jobsøgere</h6>
-						<ul class="list-unstyled">
-						     <li><a href="ledige-vikariater.html"> >> Ledige vikariate</a></li>
-						     <li><a href="cvsend.php"> >> Send dit CV</a></li>
-					     </ul>
-					     <h6>For medarbejdere</h6>
-						<ul class="list-unstyled">
-						     <li><a href="timeseddel .pdf"> >> en timeseddel (PDF)</a></li>
-						     
-					     </ul>
-					     </div>
-					     <div class="col-md-3 footerContent">
-					     <h6>Services</h6>
-						<ul class="list-unstyled">
-						     <li><a href="#"> >> Hotel / Restaurant</a></li>
-						     <li><a href="rengoring.html"> >> Rengøring</a></li>
-						     <li><a href="kantine.html"> >> Kantine</a></li>
-						     <li><a href="#"> >> Kontor</a></li>
-
-					     </ul>
-					     </div>
-					     <div class="col-md-3 footerContent">
-						   <h6>Kontakt Os</h6>
-						   <address>
-                               <strong>IR Group ApS</strong><br>
-                                Vester Farimagsgade 6, 1 sal<br>
-                                1606 København V<br>
-                                <abbr title="Phone">P:</abbr> (+45) 70 20 73 20
-                             </address>
-                             <!--<h6>Join, follow or subscribe</h6>
-                             <div class="socialMedia">
-	                             <ul class="list-unstyled list-inline">
-	                             <li><a class="facebook" href="#"></a></li>
-	                             <li><a class="twitter" href="#"></a></li>
-	                             <li><a class="linkedin" href="#"></a></li>
-		                             
-	                             </ul>
-                             </div>-->
-					     </div>
-				     </div>
-
-			     </div>
-			      <div id="footerBottom">
-				      <p>Copyright © 2014 IR Group ApS. All rights reserved.</p>
-			      </div>   
-			   </div> 
-			    
+		<?php
+		
+		     require("sources/connection.php");
+			// Load in the content of the current viewing page from the MySQL database
+			//$page = (isset($_GET['page'])) ? $_GET['page'] : "1";    
+            mysqli_set_charset($conn, "utf8");
+			$sql = "SELECT * FROM pages WHERE name='Footer'";
+			
+			$result = $conn->query($sql) or die(mysqli_error());
+			if($result){
+				$row = $result->fetch_object();
+				echo $row->content;
+			}
+			?>    
 		</div>  
          
-</body>
 
+
+</body>
 </html>
